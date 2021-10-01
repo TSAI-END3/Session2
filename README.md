@@ -65,8 +65,9 @@ Error:
 
 - In backward propagation, we start from the output layer and propagate backwards, updating weights and biases for each layer.
 - We adjust the weights and biases throughout the network, so that we get the desired output in the output layer.
+- Backpropagation aims to minimize the cost function by adjusting network’s weights and biases. The level of adjustment is determined by the gradients of the cost function with respect to those parameters.
 - To update each node after every iteration, we need to calculate the error generated with respect to that node which is calculated with the help of the gradient.
-- After each iteration of the epoch we observe that the total error is decreasing.
+- After each iteration of the epoch we observe that the total error is decreasing.We aim at minimizing E_total.
 
 To update w5 we need to calculate ∂E_Total/ ∂w5:
 
