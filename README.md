@@ -44,16 +44,16 @@ Group Members:
 1st Layer:
 
     1. h1 = w1 * i1 + w2 * i2
-    2. a_h1 = σ(h1) = 1/(1+e-h1)
+    2. a_h1 = σ(h1) = 1/(1+exp(-h1))
     3. h2 = w3 * i1 + w2 * i2
-    4. a_h2 = σ(h2) = 1/(1+e-h2)
+    4. a_h2 = σ(h2) = 1/(1+exp(-h2))
 
 2nd Layer
 
     1. o1 = w5 * a_h1 + w6 * a_h2
-    2. a_o1 = σ(a_o1) = 1/(1+e-a_o1)
+    2. a_o1 = σ(a_o1) = 1/(1+exp(-a_o1))
     3. o2 = w7 * a_h1 + w8 * a_h2
-    4. a_o2 = σ(a_o2) = 1/(1+e-a_o2)
+    4. a_o2 = σ(a_o2) = 1/(1+exp(-a_o2))
 
 Error:
 
